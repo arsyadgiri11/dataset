@@ -27,7 +27,7 @@ def predict_label(img_path):
     print(predicted_bit)
     return class_dict[predicted_bit]
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST']
 def index():
     if request.method == 'POST':
         if request.files:
